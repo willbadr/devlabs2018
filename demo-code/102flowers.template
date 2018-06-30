@@ -1,0 +1,35 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "05a33db8-faa1-43ec-bec8-404b2c6a48bb": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 388.0078125,
+                    "y": 103.890625
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "C9EEC23W88B": {
+            "Type": "AWS::Cloud9::EnvironmentEC2",
+            "Properties": {
+                "Repositories": [
+                    {
+                        "PathComponent": "/SydSummit",
+                        "RepositoryUrl": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/SydSummitSageMaker"
+                    }
+                ],
+                "Description": "EC2 Cloud9 Environment for Syd Summit Demo",
+                "AutomaticStopTimeMinutes": 60,
+                "InstanceType": "t2.small",
+                "Name": "SydSummit Environment"
+            }
+        }
+    }
+}
